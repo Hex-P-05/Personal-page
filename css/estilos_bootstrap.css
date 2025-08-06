@@ -1,0 +1,180 @@
+/* Config inicial */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Config de elementos */
+:root {
+    --azul: #3c5a94;
+    --texto: #1d2026;
+    --blanco: #ffffff;
+    --font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    background-color: #fbf1db;
+    color: var(--texto);
+}
+
+
+/* TOP BANNER */
+.top-banner {
+    background-color: #3D4C69;
+    color: var(--blanco);
+    justify-content: center;
+    align-items: center;
+    font-family: initial;
+    font-size: 20px;
+    padding: 12px 16px;
+    font-weight:lighter;
+    letter-spacing: 0.2cm;
+}
+
+.top-banner p {
+    margin: 0;
+}
+/**********************************/
+
+
+
+/* RECTANGULOS DE INFORMACION Y SEMBLANZA*/
+.rectangulo-izquierdo,
+.rectangulo-derecho,
+.rectangulo-derecho-2,
+.rectangulo-banners,
+.rectangulo-aptitudes,
+.rectangulo-habilidades,
+.banner-aptitudes,
+.banner-habilidades,
+.banner {
+    border-radius: 0 !important;
+}
+
+.rectangulo-izquierdo {
+    background-color: var(--azul);
+    color: var(--blanco);
+    padding: 30px 20px;
+    text-align: center;
+    height: 110%;
+}
+
+.imagen img {
+    height: 160px;
+    width: 110px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.nombre {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.datos {
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+.rectangulo-derecho,
+.rectangulo-derecho-2 {
+    background-color: #B8D0FF;
+    color: var(--texto);
+    padding: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.rectangulo-derecho-2 {
+    background-color: #B8D0FF;
+}
+/**********************************/
+
+
+
+/* TEXTO */
+.semblanza,
+.semblanza-derecha {
+    text-align: justify;
+    margin: 0;
+}
+/**********************************/
+
+
+
+/* BANNERS GENERALES */
+.banner,
+.banner-aptitudes,
+.banner-habilidades {
+    background-color: #3D4C69;
+    color: var(--blanco);
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 15px;
+    font-family: fantasy;
+    font-weight:lighter;
+    font-size: 40px;
+    letter-spacing: 0.2cm;
+    margin-top: -15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/**********************************/
+
+
+
+/* RECTÁNGULOS DE CONTENIDO */
+.rectangulo-banners,
+.rectangulo-aptitudes,
+.rectangulo-habilidades {
+    background-color: #B8D0FF;
+    color: var(--texto);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 50px;
+    font-family: monospace;
+    font-size: 18px;
+}
+/**********************************/
+
+
+
+/* ##### RESPONSIVE CON BOOTSTRAP ### */
+@media (min-width: 767px) {
+    .top-banner {
+        font-size: 16px;
+        letter-spacing: 0.05cm;
+        padding: 10px;
+        height: auto;
+    }
+    
+    .rectangulo-izquierdo {
+        height: auto;
+    }
+
+    .rectangulo-aptitudes,
+    .rectangulo-habilidades {
+        min-height: 200px;
+    }
+
+    .rectangulo-banners {
+        min-height: 180px;
+    }
+}
+
+a {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-solid {
+    margin-right: 8px;
+}
